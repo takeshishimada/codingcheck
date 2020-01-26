@@ -39,7 +39,6 @@ class ListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        // realmの更新を確認
         store.dispatch(NoteAction.reload)
     }
 
@@ -65,7 +64,6 @@ class ListViewController: UIViewController {
 
         diaryListView.rx.setDelegate(self).disposed(by: disposeBag)
 
-        // 右上の追加ボタン押下時の処理
         addDiaryButton.rx.tap
             .subscribe({ [unowned self] _ in
                 self.performSegue(withIdentifier: "CreateNoteSegue", sender: nil)
