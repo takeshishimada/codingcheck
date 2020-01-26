@@ -173,12 +173,6 @@
                                 <action selector="tapStrikethrough:" destination="5mc-vc-Ki6" id="ZgU-kc-tZK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="表組" id="P8K-IG-j7F">
-                            <connections>
-                                <action selector="tapTable:" destination="5mc-vc-Ki6" id="nrs-wH-IxU"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="KUO-1e-OHF"/>
                         <barButtonItem title="自動ルビ" id="egU-je-IYI">
                             <connections>
                                 <action selector="tapRuby:" destination="5mc-vc-Ki6" id="AEw-b6-A0C"/>

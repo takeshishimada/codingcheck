@@ -131,25 +131,13 @@ extension EditViewController {
     }
     
     @IBAction func tapRuby(_ sender: Any) {
-        var selectedText = self.textView.selectedText
-        FuriganaService.translate(text: selectedText).subscribe({ [unowned self] (event) in
+        FuriganaService.translate(text: self.textView.selectedText)
+            .subscribe({ [unowned self] (event) in
             guard let result = event.element else { return }
-            result.reversed().forEach { (furigana) in
-                let startIndex = selectedText.index(selectedText.startIndex, offsetBy: furigana.pos)
-                let endIndex = selectedText.index(selectedText.index(selectedText.startIndex, offsetBy: furigana.pos), offsetBy: furigana.surface.count - 1)
-                let range: ClosedRange = startIndex...endIndex
-                let replaceText = "<ruby>\(furigana.surface)<rt>\(furigana.furigana)</rt></ruby>"
-                debugPrint(range.description)
-                selectedText.replaceSubrange(range, with: replaceText)
-            }
-            self.textView.insertText(selectedText)
+            self.textView.insertText(result)
         }).disposed(by: self.disposeBag)
     }
 
-    @IBAction func tapTable(_ sender: Any) {
-
-    }
-    
     @IBAction func tapDone(_ sender: Any) {
         self.textView.endEditing(true)
     }
