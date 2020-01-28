@@ -10,15 +10,12 @@
 		82226B9023D9907400D8623D /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82226B8F23D9907400D8623D /* Differentiator.framework */; };
 		82226B9623D9A23200D8623D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82226B9523D9A23200D8623D /* Note.swift */; };
 		82226B9823D9A24600D8623D /* NoteSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82226B9723D9A24600D8623D /* NoteSectionModel.swift */; };
-		82226B9B23DC1FE500D8623D /* RxRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82226B9A23DC1FE400D8623D /* RxRealm.framework */; };
-		82226B9C23DC1FE500D8623D /* RxRealm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82226B9A23DC1FE400D8623D /* RxRealm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		82226B9F23DC2CEB00D8623D /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82226B9E23DC2CEB00D8623D /* NoteRepository.swift */; };
 		82226BA523DC3D0300D8623D /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82226BA423DC3D0300D8623D /* NoteStore.swift */; };
 		82226BA823DC3F4F00D8623D /* NoteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82226BA723DC3F4F00D8623D /* NoteAction.swift */; };
 		82226BAB23DC3F8D00D8623D /* NoteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82226BAA23DC3F8D00D8623D /* NoteState.swift */; };
 		82226BAE23DC3FBF00D8623D /* NoteReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82226BAD23DC3FBF00D8623D /* NoteReducer.swift */; };
 		82226BB023DC539900D8623D /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82226BAF23DC539900D8623D /* ReSwift.framework */; };
-		82226BB123DC539900D8623D /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82226BAF23DC539900D8623D /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		82353B2123D6D9D800B85573 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82353B2023D6D9D800B85573 /* SnapKit.framework */; };
 		82D3352B23D73F9500102EEE /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D3352A23D73F9500102EEE /* RxCocoa.framework */; };
 		82D3352E23D7424400102EEE /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D3352D23D7424400102EEE /* RxRelay.framework */; };
@@ -78,8 +75,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				82226B9C23DC1FE500D8623D /* RxRealm.framework in Embed Frameworks */,
-				82226BB123DC539900D8623D /* ReSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,7 +85,6 @@
 		82226B8F23D9907400D8623D /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
 		82226B9523D9A23200D8623D /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		82226B9723D9A24600D8623D /* NoteSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSectionModel.swift; sourceTree = "<group>"; };
-		82226B9A23DC1FE400D8623D /* RxRealm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRealm.framework; path = Carthage/Build/iOS/RxRealm.framework; sourceTree = "<group>"; };
 		82226B9E23DC2CEB00D8623D /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
 		82226BA423DC3D0300D8623D /* NoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStore.swift; sourceTree = "<group>"; };
 		82226BA723DC3F4F00D8623D /* NoteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAction.swift; sourceTree = "<group>"; };
@@ -145,7 +139,6 @@
 			files = (
 				82226B9023D9907400D8623D /* Differentiator.framework in Frameworks */,
 				82D3354723D98AA800102EEE /* RxDataSources.framework in Frameworks */,
-				82226B9B23DC1FE500D8623D /* RxRealm.framework in Frameworks */,
 				82D3353F23D87A2300102EEE /* Realm.framework in Frameworks */,
 				82D3353523D750FB00102EEE /* IQKeyboardManagerSwift.framework in Frameworks */,
 				82D3352E23D7424400102EEE /* RxRelay.framework in Frameworks */,
@@ -310,7 +303,6 @@
 			isa = PBXGroup;
 			children = (
 				82226BAF23DC539900D8623D /* ReSwift.framework */,
-				82226B9A23DC1FE400D8623D /* RxRealm.framework */,
 				82226B8F23D9907400D8623D /* Differentiator.framework */,
 				82D3354623D98AA800102EEE /* RxDataSources.framework */,
 				82D3353D23D87A2300102EEE /* Realm.framework */,
@@ -517,7 +509,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxRealm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
 			);
 			outputFileListPaths = (

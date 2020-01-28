@@ -9,5 +9,3 @@ github "SnapKit/SnapKit" ~> 5.0.0
 github "hackiftekhar/IQKeyboardManager"
 github "realm/realm-cocoa"
 github "ReSwift/ReSwift"
-github "Swinject/Swinject"
-github "Swinject/SwinjectStoryboard"
