@@ -131,6 +131,13 @@ extension EditViewController {
     }
     
     @IBAction func tapRuby(_ sender: Any) {
+        if self.textView.selectedText.isEmpty {
+            let alertController = UIAlertController(title: "ルビを振る文章を範囲選択して下さい。", message: nil, preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler: nil)
+            alertController.addAction(cancel)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
         FuriganaService.translate(text: self.textView.selectedText)
             .subscribe({ [unowned self] (event) in
             guard let result = event.element else { return }
